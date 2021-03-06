@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>VA Arts</title>
+	
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/all.min.css">
+	<link rel="stylesheet" href="css/w3.css"> 
+	<script src="js/open.js"></script>
+</head>
+<body>
+	<header>
+		<div class="logo" style="font-family:cursive; font-weight: bold; font-size: 48px;"><a href="index.html">VA Arts</a></div>
+		<nav>
+			<ul>
+				<li>
+					<a class="active" href="index.html">
+						<i class="fas fa-pencil-alt"></i>
+						Pencil Sketches</a>
+				</li>
+				<li>
+					<a href="PenArtworks.html">
+						<i class="fas fa-pen-alt"></i>
+						Pen Artworks</a>
+				</li>
+				<li>
+					<a href="Contact.html">
+						<i class="fas fa-phone-alt"></i>
+						Contact</a>
+				</li>
+			</ul>
+		</nav>			
+			<div class="menu-toggle"><i class="fas fa-bars"></i></div>	
+	
+	</header>
+	<br>
+	<div class="container">
+	<div class="gallery">
+		<img src="img/DontGiveUp.jpg" alt="DontGiveUp" onclick="onClick(this)" style="width:100%;cursor:pointer" class="w3-hover-opacity">
+			<div class="desc">Dont Give Up</div>
+	</div>
+	<div class="gallery">
+		<img src="img/StrangerThings.jpg" alt="StrangerThings" onclick="onClick(this)" style="width:100%;cursor:pointer" class="w3-hover-opacity">
+			<div class="desc">Stranger Things</div>
+	</div>
+	<div class="gallery">
+		<img src="img/EyePen.jpg" alt="EyePen" onclick="onClick(this)" style="width:100%;cursor:pointer" class="w3-hover-opacity"> 
+			<div class="desc">Eye</div>
+	</div>
+	<div class="gallery">
+		<img src="img/EyeNose.jpg" alt="EyeNose" onclick="onClick(this)" style="width:100%;cursor:pointer" class="w3-hover-opacity">
+			<div class="desc">Eye and Nose</div>
+	</div>
+	<div class="gallery">
+		<img src="img/HarryHat.jpg" alt="HarryHat" onclick="onClick(this)" style="width:100%;cursor:pointer" class="w3-hover-opacity">
+			<div class="desc">The Sorting Hat</div>
+	</div>
+	<div class="gallery">
+		<img src="img/Joker.jpg" alt="Joker" onclick="onClick(this)" style="width:100%;cursor:pointer" class="w3-hover-opacity">
+			<div class="desc">Joker</div>
+	</div>
+	<div class="gallery">
+		<img src="img/Bulb.jpg" alt="Bulb" onclick="onClick(this)" style="width:100%;cursor:pointer" class="w3-hover-opacity">
+			<div class="desc">Bulb</div>
+	</div>
+	<div class="gallery">
+		<img src="img/Fox.jpg" alt="Fox" onclick="onClick(this)" style="width:100%;cursor:pointer" class="w3-hover-opacity">
+			<div class="desc">Fox</div>
+	</div>
+	</div>
+
+	<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+		<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+		<div class="w3-modal-content w3-animate-zoom">
+		  <img id="img01" style="width:100%">
+		</div>
+	  </div>
+	  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	  <script type="text/javascript">
+	  $(document).ready(function(){
+		  $('.menu-toggle').click(function(){
+			  $('nav').toggleClass('active')
+		  })
+	  })
+	</script>
+</body>
+</html>
